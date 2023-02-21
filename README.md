@@ -45,7 +45,7 @@ public class Configuration {
 
 }
 
-**Step 3: Access this configuration file in controller
+**Step 3** Access this configuration file in controller
 @RestController
 public class LimitsController {
 
@@ -64,7 +64,7 @@ public class LimitsController {
 limit-service.min=5
 limit-service.max=995
 
-** Step 5** Setting up Spring Cloud Config Server
+**Step 5** Setting up Spring Cloud Config Server
 
 On Spring Initializr, choose:
 
@@ -74,26 +74,26 @@ Dependencies
 DevTools
 Config Server
 
-** Step 6** application.properties
+**Step 6** application.properties
 spring.application.name=spring-cloud-config-server
 server.port=8888
 spring.cloud.config.server.git.uri=https://github.com/chirag1210/springcloudconfiguration
 
 
-** Step 7** aaplication class 
+**Step 7** aaplication class 
  SpringCloudConfigServerApplication.java
 
 import org.springframework.cloud.config.server.EnableConfigServer;
 
 @EnableConfigServer
 
-** Step 8**  Connect Limits Service to Spring Cloud Config Server
+**Step 8**  Connect Limits Service to Spring Cloud Config Server
 
 URLS
 
 http://localhost:8888/limits-service/default
 
-** Step 9** Configuring Profiles for Limits Service
+**Step 9** Configuring Profiles for Limits Service
 
 /limits-service/src/main/resources/application.properties Modified
 
