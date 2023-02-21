@@ -104,8 +104,10 @@ spring.cloud.config.profile=qa
 spring.application.name=limits-service
 spring.config.import=optional:configserver:http://localhost:8888
 
+----------------------------------------------------------------------------------
+**Reference** 
 
-link: https://github.com/in28minutes/spring-microservices-v2/tree/main/03.microservices
+https://github.com/in28minutes/spring-microservices-v2/tree/main/03.microservices
 
 
 
