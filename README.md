@@ -31,7 +31,7 @@ Actuator
 Config Client  
 
 **Step 2** Create Configuration class  
-                             Configuration.java  
+```                             Configuration.java  
   
 import org.springframework.boot.context.properties.ConfigurationProperties;  
 import org.springframework.stereotype.Component;  
@@ -42,10 +42,10 @@ import org.springframework.stereotype.Component;
 public class Configuration {  
  //declare variable and setter and getter  
   
-}  
+}  ```
   
 **Step 3** Access this configuration file in controller  
-@RestController  
+```@RestController  
 public class LimitsController {  
   
 	@Autowired  
@@ -57,7 +57,7 @@ public class LimitsController {
 				configuration.getMaximum());  
 //		return new Limits(1,1000);  
 	}  
-}  
+}  ```
 
 **Step 4** Create limit-service-dev.properties in github file  
 limit-service.min=5  
@@ -79,7 +79,7 @@ server.port=8888
 spring.cloud.config.server.git.uri=https://github.com/chirag1210/springcloudconfiguration  
   
   
-**Step 7** aplication class   
+**Step 7** Application class   
  SpringCloudConfigServerApplication.java  
   
 import org.springframework.cloud.config.server.EnableConfigServer;  
