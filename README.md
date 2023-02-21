@@ -31,7 +31,8 @@ Actuator
 Config Client  
 
 **Step 2** Create Configuration class  
-```                             Configuration.java  
+```                             
+                           Configuration.java  
   
 import org.springframework.boot.context.properties.ConfigurationProperties;  
 import org.springframework.stereotype.Component;  
@@ -42,7 +43,8 @@ import org.springframework.stereotype.Component;
 public class Configuration {  
  //declare variable and setter and getter  
   
-}  ```
+}  
+```
   
 **Step 3** Access this configuration file in controller  
 ```@RestController  
