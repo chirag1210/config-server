@@ -20,15 +20,16 @@ By following these steps, you can create a Spring Boot microservice architecture
 
 
 **Step 01** - Setting up Limits Microservice
-
+````
 On Spring Initializr, choose:
-Group Id: com.in28minutes.microservices  
-Artifact Id: limits-service  
-Dependencies  
-Web  
-DevTools  
-Actuator  
-Config Client  
+                      Group Id: com.in28minutes.microservices  
+                      Artifact Id: limits-service  
+                                   Dependencies  
+                                   Web  
+                                   DevTools  
+                                   Actuator  
+                                   Config Client  
+```  
 
 **Step 2** Create Configuration class  
 ```                             
